@@ -1,7 +1,37 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Message Page";
 }
 
-<h1>Index</h1>
 
+<!-- Chat Login Form -->
+@*<div class="loginForm ">
+    <div>
+        <input id="inputUsername" type="text" class="form-control" placeholder="Enter username for chatting" />
+    </div>
+    <div>
+        <button id="buttonLogin" type="button" style="background-color: black; color: lavender; margin-top: 20px;" class="btn btn-md ">Login</button>
+    </div>
+</div>*@
+<div class="mainDiv">
+    <div id="myMessagingDiv">
+        <div id="myMessagingDivHeader">Click here to move</div>
+        <!-- Message area -->
+        <div id="messageArea">
+            @*<ul id="userMessageRow" class="messageRowClassLeft">Test Yabanci</ul>
+            <ul id="userMessageRow" class="messageRowClassRight">Test Ben</ul>*@
+        </div>
+
+        <!-- Message input -->
+        <div id="messageInput" class="container">
+            <div class="form-inline">
+                <input id="textMessage" placeholder="Enter something" class="form-control"></input>
+                <button id="buttonSend" class="btn btn-sm">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="usersDiv">
+    <div id="usersDivOnlineStatus">0 Users Online</div>
+    @*<ul id="userRow" class="userRowClass">Test User</ul>*@
+</div>

@@ -25,6 +25,7 @@ namespace ChatAppWithSignalR
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(x => x.EnableEndpointRouting = false);
+            services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +39,7 @@ namespace ChatAppWithSignalR
             app.UseStaticFiles();
 
             app.UseStatusCodePages();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
