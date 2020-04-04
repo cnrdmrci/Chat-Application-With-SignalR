@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ChatAppWithSignalR.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -26,6 +27,7 @@ namespace ChatAppWithSignalR
         {
             services.AddMvc(x => x.EnableEndpointRouting = false);
             services.AddRazorPages().AddRazorRuntimeCompilation();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,11 @@ namespace ChatAppWithSignalR
             app.UseStaticFiles();
 
             app.UseStatusCodePages();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapHub<ChatManagerHub>("/chatManagerHub");
+            });
             
             app.UseMvc(routes =>
             {
