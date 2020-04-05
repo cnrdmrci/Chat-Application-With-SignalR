@@ -5,21 +5,22 @@
 
 
 <!-- Chat Login Form -->
-@*<div class="loginForm ">
-    <div>
-        <input id="inputUsername" type="text" class="form-control" placeholder="Enter username for chatting" />
+<div id="loginFormId" class="loginForm">
+        <div>
+            <input id="inputUsername" type="text" class="form-control" placeholder="Enter username for chatting" />
+        </div>
+        <div>
+            <button id="loginButton" type="button" style="background-color: black; color: lavender; margin-top: 20px;" class="btn btn-md ">Login</button>
+        </div>
     </div>
-    <div>
-        <button id="buttonLogin" type="button" style="background-color: black; color: lavender; margin-top: 20px;" class="btn btn-md ">Login</button>
-    </div>
-</div>*@
-<div class="mainDiv">
+
+
+<div id="mainDivId" class="mainDiv hide">
     <div id="myMessagingDiv">
         <div id="myMessagingDivHeader">Click here to move</div>
         <!-- Message area -->
         <div id="messageArea">
-            @*<ul id="userMessageRow" class="messageRowClassLeft">Test Yabanci</ul>
-            <ul id="userMessageRow" class="messageRowClassRight">Test Ben</ul>*@
+
         </div>
 
         <!-- Message input -->
@@ -31,7 +32,12 @@
         </div>
     </div>
 </div>
-<div class="usersDiv">
+<div id="usersDivId" class="usersDiv hide">
     <div id="usersDivOnlineStatus">0 Users Online</div>
-    @*<ul id="userRow" class="userRowClass">Test User</ul>*@
+
 </div>
+
+
+@*<ul id="userMessageRow" class="messageRowClassLeft">Test Yabanci</ul>
+    <ul id="userMessageRow" class="messageRowClassRight">Test Ben</ul>*@
+@*<ul id="userRow" class="userRowClass">Test User</ul>*@
