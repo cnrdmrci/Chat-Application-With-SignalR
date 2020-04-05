@@ -4,7 +4,12 @@
 Amacımız bir .net core mvc projesinde SignalR kütüphanesini kullanarak, real time bir konuşma uygulaması yapmak ve web socketin nasıl kullanıldığı vb durumları incelemek.
 
 ### Programın Tanıtımı Ve Kullanımı
+Proje başlatıldığında ilk önce login olmak için bir sayfa geliyor. Bu kısma adınızı girmeniz yeterli.
+![login](https://user-images.githubusercontent.com/16361055/78502713-17a33780-776b-11ea-97d6-d10a28fdf736.jpg)
 
+Login olduktan sonra sunucuyla gerçek zamanlı bir bağlantı kurulmakta. Mesaj gönderebilir, sol kısımdan online olan kişileri görebilirsiniz.
+![messaging](https://user-images.githubusercontent.com/16361055/78502664-e0cd2180-776a-11ea-9c88-9ab1abf71642.jpg)
+Taşınabilir pencere de ekledim. İlerleyen adımda belirli bir kişiyle konuşma ile ilgili işlemler yapılabilir.
 
 ### SignalR nedir?
 SignalR gerçek zamanlı uygulamalar geliştirmek için hazırlanmış açık kaynaklı bir .net kütüphanesidir. Normal Http protokolünü kullanan sayfalarda güncel verilerin görüntülenebilmesi için sayfanın yenilenmesi gereklidir. Ancak SignalR kütüphanesinin devamlı bağlantı kurabilmesi nedeniyle anlık değişiklikler sayfa yenilenmeden görüntülenebilmektedir.
