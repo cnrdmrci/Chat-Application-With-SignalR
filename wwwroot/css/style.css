@@ -73,7 +73,9 @@
     overflow-y: auto;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;    
+    padding-right: 10px;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
 }
 
 #textMessage {
@@ -130,4 +132,16 @@
     font-size: 12px;
     width: 300px;
     margin-left: 230px;
+}
+.messageRowClassNewJoin {
+    background-color: darkmagenta;
+    padding-left: 200px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 3px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    font-size: 12px;
 }
