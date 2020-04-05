@@ -42,6 +42,8 @@ namespace ChatAppWithSignalR
 
             app.UseStatusCodePages();
 
+            app.UseRouting();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<ChatManagerHub>("/chatManagerHub");
